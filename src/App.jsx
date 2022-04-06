@@ -1,18 +1,19 @@
-import styled from "@emotion/styled";
 import { useState } from "react";
+import { Heading, Contenedor, Imagen, FormContainer } from "./StyledComponents";
 
-const Heading = styled.h1`
-   align-items: center;
-   color: #fff;
-   display: flex;
-   font-family: "Lato", sans-serif;
-   justify-content: center;
-`;
+import ImgCripto from "./img/imgCripto.png";
+import Formulario from "./Components/Formulario";
 
 function App() {
    return (
       <>
-         <Heading>desde App</Heading>
+         <Contenedor>
+            <Imagen src={ImgCripto} alt='imganes cripto' />
+            <FormContainer>
+               <Heading>cotiza criptos al instante</Heading>
+               <Formulario />
+            </FormContainer>
+         </Contenedor>
       </>
    );
 }
