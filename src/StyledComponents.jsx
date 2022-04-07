@@ -51,6 +51,7 @@ export const FormContainer = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: center;
+   margin-bottom: 100px;
 `;
 
 // boton cotizar
@@ -62,6 +63,7 @@ export const InputSubmit = styled.input`
    cursor: pointer;
    font-size: 20px;
    font-weight: 700;
+   margin-top: 30px;
    padding: 15px;
    text-transform: uppercase;
    transition: background-color 300ms ease;
@@ -74,6 +76,19 @@ export const InputSubmit = styled.input`
 
 // FormSelect
 
-export const FormSelect = styled.label`
+export const FormLabel = styled.label`
    color: #fff;
+   display: block;
+   font-family: "lato", sans-serif;
+   font-size: 24px;
+   font-weight: 700;
+   margin: 15px 0;
+   text-align: center;
+`;
+
+export const FormSelect = styled.select`
+   border-radius: 5px;
+   font-size: 18px;
+   padding: 15px;
+   width: 100%;
 `;
