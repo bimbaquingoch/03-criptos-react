@@ -92,3 +92,33 @@ export const FormSelect = styled.select`
    padding: 15px;
    width: 100%;
 `;
+
+// resultado
+
+export const ContenedorResultado = styled.div`
+   align-items: center;
+   box-shadow: 3px 3px 10px 1px #69a4fb;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+   padding: 20px;
+   width: 90%;
+   img {
+      width: 30%;
+   }
+`;
+
+export const TextoPrecio = styled.p`
+   font-size: 30px;
+`;
+
+export const TextoResultado = styled.p`
+   color: #fff;
+   font-family: "Lato", sans-serif;
+   font-size: ${({ size }) => (size ? `${size}px` : "18px")};
+   span {
+      color: #${({ color }) => color};
+      font-weight: 900;
+   }
+`;
