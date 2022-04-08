@@ -20,7 +20,7 @@ export const Heading = styled.h1`
    }
 
    @media screen and (min-width: 720px) {
-      margin: 100px auto;
+      margin: 70px 10px 10px 10px;
    }
 `;
 
@@ -41,8 +41,12 @@ export const Contenedor = styled.div`
 export const Imagen = styled.img`
    display: block;
    max-width: 400px;
-   margin: 100px auto 0 auto;
+   margin: 10px auto;
    width: 80%;
+
+   @media screen and (min-width: 720px) {
+      margin: 70px 10px 10px 10px;
+   }
 `;
 
 // form container
